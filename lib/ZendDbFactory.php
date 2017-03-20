@@ -8,16 +8,20 @@ use Zend\Db\Adapter\Adapter;
 class ZendDbFactory
 {
 
-    const PATH_DRIVER   = 'database/adapter/driver';
-    const PATH_DATABASE = 'database/adapter/database';
-    const PATH_USERNAME = 'database/adapter/username';
-    const PATH_PASSWORD = 'database/adapter/password';
-    const PATH_HOSTNAME = 'database/adapter/hostname';
-    const PATH_PORT     = 'database/adapter/port';
-    const PATH_CHARSET  = 'database/adapter/charset';
+    const PATH_DRIVER   = 'database/zenddb/driver';
+    const PATH_DATABASE = 'database/zenddb/database';
+    const PATH_USERNAME = 'database/zenddb/username';
+    const PATH_PASSWORD = 'database/zenddb/password';
+    const PATH_HOSTNAME = 'database/zenddb/hostname';
+    const PATH_PORT     = 'database/zenddb/port';
+    const PATH_CHARSET  = 'database/zenddb/charset';
 
     public static function factory(ConfigurationRepository $repository)
     {
+        if (!$repository->hasValue(self::PATH_DRIVER)) {
+            throw new InvalidConfigurationException('Missing the configuration value for ' . self::PATH_DRIVER);
+        }
+
         $options = [
             'driver'    => $repository->getValue(self::PATH_DRIVER)
         ];
