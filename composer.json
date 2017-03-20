@@ -1,0 +1,24 @@
+{
+  "name": "magium/zend-db-factory",
+  "description": "A factory for configuring zendframework/zend-db adapters using the Magium Configuration Manager",
+  "minimum-stability": "stable",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "Kevin Schroeder",
+      "email": "kschroeder@magiumlib.com"
+    }
+  ],
+  "require": {
+    "magium/configuration-manager": "^0.8.24",
+    "zendframework/zend-db": "^2.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "Magium\\ZendDbFactory\\": "lib"
+    },
+    "files": [
+      "registration.php"
+    ]
+  }
+}
