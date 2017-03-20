@@ -15,7 +15,8 @@
   },
   "autoload": {
     "psr-4": {
-      "Magium\\ZendDbFactory\\": "lib"
+      "Magium\\ZendDbFactory\\": "lib",
+      "Magium\\ZendDbFactory\\Tests": "tests"
     },
     "files": [
       "registration.php"
