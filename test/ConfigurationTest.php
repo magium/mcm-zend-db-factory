@@ -2,7 +2,7 @@
 
 namespace Magium\ZendDbFactory\Tests;
 
-use Magium\Configuration\Config\ConfigurationRepository;
+use Magium\Configuration\Config\Repository\ConfigurationRepository;
 use Magium\ZendDbFactory\InvalidConfigurationException;
 use Magium\ZendDbFactory\ZendDbFactory;
 use PHPUnit\Framework\TestCase;
