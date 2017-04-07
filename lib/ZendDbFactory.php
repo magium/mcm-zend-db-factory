@@ -2,7 +2,7 @@
 
 namespace Magium\ZendDbFactory;
 
-use Magium\Configuration\Config\ConfigurationRepository;
+use Magium\Configuration\Config\Repository\ConfigurationRepository;
 use Zend\Db\Adapter\Adapter;
 
 class ZendDbFactory
