@@ -24,7 +24,8 @@ class ConfigurationTest extends TestCase
 </config>
 XML
         );
-        $adapter = ZendDbFactory::factory($configuration);
+        $factory = new ZendDbFactory($configuration);
+        $adapter = $factory->factory();
         self::assertInstanceOf(Adapter::class, $adapter);
     }
 
@@ -41,7 +42,8 @@ XML
 </config>
 XML
         );
-        ZendDbFactory::factory($configuration);
+        $factory = new ZendDbFactory($configuration);
+        $factory->factory();
     }
 
 }
