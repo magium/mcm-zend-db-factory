@@ -2,7 +2,7 @@
 <magiumConfiguration xmlns="http://www.magiumlib.com/Configuration">
     <section identifier="database" label="Database">
         <group identifier="zenddb" label="Zend Database Adapter">
-            <element identifier="driver" label="Driver" type="select" source="">
+            <element identifier="driver" label="Driver" type="select" source="Magium\ZendDbFactory\DbTypes">
                 <permittedValues>
                     <value>mysqli</value>
                     <value>sqlsrv</value>

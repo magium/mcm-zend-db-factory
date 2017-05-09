@@ -1,5 +1,5 @@
 {
-  "name": "magium/zend-db-factory",
+  "name": "magium/mcm-zend-db-factory",
   "description": "A factory for configuring zendframework/zend-db adapters using the Magium Configuration Manager",
   "minimum-stability": "stable",
   "license": "Apache-2.0",
@@ -10,7 +10,7 @@
     }
   ],
   "require": {
-    "magium/configuration-manager": "^0.8.29",
+    "magium/configuration-manager": "^1.0",
     "zendframework/zend-db": "^2.8"
   },
   "require-dev": {
